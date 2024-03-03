@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmanetKitapApp", "EmanetKitapApp\EmanetKitapApp.csproj", "{BB8FDACB-F324-4760-833D-E1872D2D78D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB8FDACB-F324-4760-833D-E1872D2D78D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB8FDACB-F324-4760-833D-E1872D2D78D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB8FDACB-F324-4760-833D-E1872D2D78D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB8FDACB-F324-4760-833D-E1872D2D78D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {29D47465-71C6-4517-9DAF-9A88C43C01F4}
+	EndGlobalSection
+EndGlobal

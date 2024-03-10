@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EmanetKitapApp.Migrations
 {
-    [DbContext(typeof(UygulamaDbContex))]
+    [DbContext(typeof(UygulamaDbContext))]
     partial class UygulamaDbContexModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

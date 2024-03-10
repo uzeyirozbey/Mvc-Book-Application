@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "g7dB7cqXHnb0bG9bneqIXKbUyFGMr27V3f6Qe4YYQ5bY6ylpXCUxOJnY+Z29OklsmoZztNP6WwSJcIIAU7nBoQ==",
+  "dgSpecHash": "LLuAfyoDeLbTBMlYC+e4hOwIyXTKKul1aEgsfj+P0E6QXlIUvG1WXDJmvf9Mu2BpULab0WfBv0rs2LNzlumK9Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\uzeyir\\Documents\\GitHub\\Mvc-Book-Application\\EmanetKitapApp\\EmanetKitapApp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\uzeyir\\.nuget\\packages\\aspnetcorehero.toastnotification\\1.1.0\\aspnetcorehero.toastnotification.1.1.0.nupkg.sha512",
     "C:\\Users\\uzeyir\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\uzeyir\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\uzeyir\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -49,6 +50,7 @@
     "C:\\Users\\uzeyir\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\uzeyir\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\uzeyir\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\uzeyir\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\uzeyir\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\uzeyir\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\uzeyir\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",

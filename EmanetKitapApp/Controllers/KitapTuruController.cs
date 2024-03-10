@@ -1,4 +1,5 @@
-﻿using EmanetKitapApp.Models;
+﻿using AspNetCoreHero.ToastNotification.Abstractions;
+using EmanetKitapApp.Models;
 using EmanetKitapApp.Utility;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,10 +7,12 @@ namespace EmanetKitapApp.Controllers
 {
     public class KitapTuruController : Controller
     {
-        private readonly UygulamaDbContex _uygulamaDbContext;
-        public KitapTuruController(UygulamaDbContex context)
+        private readonly UygulamaDbContext _uygulamaDbContext;
+        private readonly INotyfService _notyf;
+        public KitapTuruController(UygulamaDbContext context,   INotyfService notyf)
         {
             _uygulamaDbContext = context;
+            _notyf = notyf;
         }
 
         public IActionResult Index()
@@ -21,7 +24,6 @@ namespace EmanetKitapApp.Controllers
         {
             return View();
         }
-
         [HttpPost]
         public IActionResult Ekle(KitapTuru model)
         {
@@ -30,6 +32,8 @@ namespace EmanetKitapApp.Controllers
             {
                 _uygulamaDbContext.KitapTurleri.Add(model);
                 _uygulamaDbContext.SaveChanges();
+                _notyf.Success("Kitap Türü Ekleme İşlemi Başarılı");
+                TempData["basarili"] ="Kitap Türü Ekleme İşlemi Başarılı";
                 return RedirectToAction("Index", "KitapTuru");
             }
             return View();
@@ -57,6 +61,8 @@ namespace EmanetKitapApp.Controllers
             {
                 _uygulamaDbContext.KitapTurleri.Update(model);
                 _uygulamaDbContext.SaveChanges();
+                _notyf.Success("Kitap Türü Güncelleme İşlemi Başarılı");
+                TempData["basarili"] ="Kitap Türü Güncelleme İşlemi Başarılı";
                 return RedirectToAction("Index", "KitapTuru");
             }
             return View();
@@ -88,6 +94,8 @@ namespace EmanetKitapApp.Controllers
             }
             _uygulamaDbContext.KitapTurleri.Remove(kitapTuru);
             _uygulamaDbContext.SaveChanges();
+            _notyf.Success("Kitap Türü Silme İşlemi Başarılı");
+            TempData["basarili"] ="Kitap Türü Silme İşlemi Başarılı";
             return RedirectToAction("Index", "KitapTuru");
 
         }

@@ -1,4 +1,6 @@
-﻿using EmanetKitapApp.Utility;
+﻿using AspNetCoreHero.ToastNotification;
+using AspNetCoreHero.ToastNotification.Extensions;
+using EmanetKitapApp.Utility;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,10 +8,17 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 //Database bağlanma yeri
-builder.Services.AddDbContext<UygulamaDbContex>(options =>
-                                                options.UseSqlServer(builder.Configuration.GetConnectionString                                  ("DefaultConnection")));
-var app = builder.Build();
+builder.Services.AddDbContext<UygulamaDbContext>(options =>
+                                                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+builder.Services.AddNotyf(config=> 
+                      { config.DurationInSeconds = 10;
+                        config.IsDismissable = true;
+                              config.Position = NotyfPosition.TopCenter; 
+                            });
+
+var app = builder.Build();
+app.UseNotyf();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

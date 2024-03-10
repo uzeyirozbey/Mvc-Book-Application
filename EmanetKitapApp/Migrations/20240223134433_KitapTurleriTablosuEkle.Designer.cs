@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EmanetKitapApp.Migrations
 {
-    [DbContext(typeof(UygulamaDbContex))]
+    [DbContext(typeof(UygulamaDbContext))]
     [Migration("20240223134433_KitapTurleriTablosuEkle")]
     partial class KitapTurleriTablosuEkle
     {

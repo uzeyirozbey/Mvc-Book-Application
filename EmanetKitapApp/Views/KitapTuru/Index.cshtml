@@ -1,4 +1,8 @@
 ﻿@model List<KitapTuru>
+@if(TempData["basarili"] != null)
+{
+    <h2 style="color:green;"> @TempData["basarili"]</h2>
+}
 <style>
     .btnIslem {
         width :150px;
